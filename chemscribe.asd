@@ -39,5 +39,4 @@
   :components ((:module "tests"
                 :components ((:file "package")
                              (:file "tests"))))
-  :description "Unit tests system for ChemScribe."
-  :perform (test-op (op c) (symbol-call :rove :run c)))
+  :description "Unit tests system for ChemScribe.")
