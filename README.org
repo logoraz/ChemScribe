@@ -4,7 +4,7 @@
 /A Highly Extensible Chemical Formula Builder with Regulatory Intelligence written in
 Common Lisp./
 
-This project is still in the ideation stage - I'm still in the process of determine the
+This project is still in the ideation stage - I'm still in the process of determining the
 UI system to implement: SDL2, Electron, or GTK... as well as learning Common Lisp.
 
 Once Atlas Engineer's =cl-electron= library becomes more mature, I will begin experimenting
