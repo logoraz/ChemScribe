@@ -1,0 +1,80 @@
+#+title: ChemScribe (الكتبة)
+#+author: Erik P Almaraz (logoraz)
+
+/A Highly Extensible Chemical Formula Builder with Regulatory Intelligence written in
+Common Lisp./
+
+This project is still in the ideation stage - I'm still in the process of determine the
+UI system to implement: SDL2, Electron, or GTK... as well as learning Common Lisp.
+
+Once Atlas Engineer's =cl-electron= library becomes more mature, I will begin experimenting
+with that UI for this application.
+ref: https://github.com/atlas-engineer/cl-electron
+
+As I determine how persistent data presents itself, I will be using a simple database that
+utilizes JSON (=cl-json=), built on CLOS backend for accessing, updating, and creating records.
+I will eventually refactor to utilize Postgres via =cl-mito=, =cl-sxql=, =cl-sdi=, =cl-postmodern=...
+
+My first goal is to develop a simple file explorer package to allow the user peruse, open and
+view files.
+
+** Install
+
+  Installing ChemScribe using Guix:
+
+#+begin_src sh
+
+  $ guix shell -D path/to/chemscribe.scm -- sbcl
+
+  # or
+
+  $ guix shell -D path/to/chemscribe.scm -- clasp
+
+#+end_src
+
+
+** Run
+
+  ChemScribe can be run (at least for now) with the following prescription with sbcl (clasp)
+  running:
+
+#+begin_src lisp
+
+  (require :asdf)
+  (asdf:load-system :chemscribe)
+
+#+end_src
+
+  I've set it up so it automatically starts slynk so I can connect to it with Emacs. Simply
+  connect Emacs Sly to port 4008, via =M-x sly-connect "localhost" 4008=
+
+  Then enter package and start the application to begin hacking!
+
+#+begin_src lisp
+
+  (in-package :chemscribe)
+
+#+end_src
+
+
+** Clasp
+
+  This section is yet to be developed, but it will stage how to setup clasp to call C++
+  utilities for advanced chemical computation features that I plan to implement in this
+  application...
+
+
+** Change Log
+
+*** 0.0.1
+   - Initial commit
+   - Added basic project scaffold
+
+
+** References
+
+  - [[https://github.com/lispgames/cl-sdl2][cl-sdl2 (source)]]
+
+  - [[https://github.com/atlas-engineer/cl-electron][cl-electron (source)]]
+
+  - [[https://github.com/bohonghuang/cl-gtk4][cl-gkt4 (source)]]
