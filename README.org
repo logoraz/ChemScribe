@@ -9,9 +9,8 @@ UI system to implement it with. So far my preferences are SDL2, Electron, or GTK
 Also, I am still learning Common Lisp and figured this would be a great way to dive in!
 
 My first goal is to develop a simple database (integrated with JSON), based on CLOS, that can
-store/access raw material, formula, and regulatory data types. Then create simple file
-manager package to allow the user peruse, open and view files along with a unit testing
-system.
+store/access raw material, formula, and regulatory data types. Second is to develop the
+formula builder and project file system manaager UIs.
 
 ** Install
 
