@@ -25,18 +25,19 @@
                "lparallel"
                "slynk"
                "cl-json")
-  :components ((:module "source"
-                :components ((:file "package")
-                             (:file "chemscribe"))))
+  :pathname "source"
+  :serial t
+  :components ((:file "package")
+               (:file "chemscribe"))
   :description "Extensible Chemical Formula Builder with Regulatory Intelligence."
-  :in-order-to ((test-op (test-op "chemscribe/tests"))))
+  :in-order-to ((test-op (test-op "chemscribe-tests"))))
 
-(defsystem "chemscribe/tests"
+(defsystem "chemscribe-tests"
   :author "Erik P Almaraz"
   :license "Apache 2.0"
   :depends-on ("chemscribe"
                "lisp-unit2")
-  :components ((:module "tests"
-                :components ((:file "package")
-                             (:file "tests"))))
+  :pathname "tests"
+  :serial t
+  :components ((:file "database"))
   :description "Unit tests system for ChemScribe.")

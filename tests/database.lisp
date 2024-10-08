@@ -1,4 +1,4 @@
-;;;; package.lisp --> tests
+;;;; database.lisp --> tests
 
 ;;; Copyright 2024 Erik P Almaraz <erikalmaraz@fastmail.com>
 ;;;
@@ -14,6 +14,7 @@
 ;;; See the License for the specific language governing permissions and
 ;;; limitations under the License.
 
-(uiop:define-package :chemscribe/tests/main
+(uiop:define-package :chemscribe-tests/database
   (:use :cl :chemscribe :lisp-unit2)
   (:documentation "Unit test package for ChemScribe."))
+(in-package :chemscribe-tests/database)
