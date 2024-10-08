@@ -5,18 +5,13 @@
 Common Lisp./
 
 This project is still in the ideation stage - I'm still in the process of determining the
-UI system to implement: SDL2, Electron, or GTK... as well as learning Common Lisp.
+UI system to implement it with. So far my preferences are SDL2, Electron, or GTK.
+Also, I am still learning Common Lisp and figured this would be a great way to dive in!
 
-Once Atlas Engineer's =cl-electron= library becomes more mature, I will begin experimenting
-with that UI for this application.
-ref: https://github.com/atlas-engineer/cl-electron
-
-As I determine how persistent data presents itself, I will be using a simple database that
-utilizes JSON (=cl-json=), built on CLOS backend for accessing, updating, and creating records.
-I will eventually refactor to utilize Postgres via =cl-mito=, =cl-sxql=, =cl-sdi=, =cl-postmodern=...
-
-My first goal is to develop a simple file explorer package to allow the user peruse, open and
-view files.
+My first goal is to develop a simple database (integrated with JSON), based on CLOS, that can
+store/access raw material, formula, and regulatory data types. Then create simple file
+manager package to allow the user peruse, open and view files along with a unit testing
+system.
 
 ** Install
 
@@ -24,16 +19,16 @@ view files.
 
 #+begin_src sh
 
-  $ guix shell -D path/to/chemscribe.scm -- sbcl
+  # Install package dependencies and open sbcl (or clasp)
+  $ guix shell -m path/to/chemscribe.scm -- sbcl
 
-  # or
-
+  # Or for development...
   $ guix shell -D path/to/chemscribe.scm -- clasp
 
 #+end_src
 
 
-** Run
+** Run/Load System
 
   ChemScribe can be run (at least for now) with the following prescription with sbcl (clasp)
   running:

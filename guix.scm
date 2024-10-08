@@ -19,7 +19,7 @@
 ;;; Currently lists out packages intended to develop ChemScribe
 ;;; see: https://guix.gnu.org/en/manual/devel/en/html_node/Writing-Manifests.html
 ;;;
-;;; GNU Guix development manifest.  To start the CL REPL:
+;;; GNU Guix development manifest. To start the CL REPL:
 ;;;
 ;;;   guix shell -m path/to/chemscribe-gtk4.scm -- sbcl
 ;;;
@@ -32,4 +32,4 @@
    "cl-lparallel"
    "cl-slynk"
    "cl-json"
-   "cl-lisp-unit2"))
+   "cl-fiveam"))
