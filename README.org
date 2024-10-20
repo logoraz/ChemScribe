@@ -5,37 +5,51 @@
 Intelligence written in Guile./
 
 This project is still in the ideation stage - I'm still in the process of determining the
-inner workings, let alone the UI system to implement it with. I would like to leverage
-Hoot as a point to create a web application. That said, I am still learning Guile and
-figured this would be a great way to dive in!
+inner workings, let alone the UI system to implement it with (though considering guile-sdl2).
+I would like to leverage Hoot at some point to create a web application. That said, I am
+still learning Guile and figured this would be a great way to dive in!
 
 * Goals
 
   My first goal is to develop a simple database (integrated with JSON) that can store/access
   molecular, raw material, formula, and regulatory data types. Second is to develop the
-  formula builder and Molecular editor. Thirdly is to integrate reulatory intelligence via
-  access to public databases.
+  formula builder and Molecular editor UI's, perhaps using GOOPS. Thirdly is to develop the
+  regulatory intelligence backend...
 
 ** Install
 
-  Installing ChemScribe using Guix...
+  Installing ChemScribe using Guix:
+
+#+begin_src sh
+
+  $ guix shell -m path/to/guile-chemscribe/manifest.scm -- guile
+
+  # or
+
+  $ guix shell -D path/to/guile-chemscribe/manifest.scm -- guile
+
+#+end_src
 
 
-** Run/Load System
+** Run/Load Program
 
-  Loading program using Guix...
+  TBD
 
 ** Guile
 
-  Modules built that can potentially become apart of Guile...
+  Modules built that can potentially become part of Guile...
 
 ** Change Log
 
+*** 0.0.2
+
+   - TBD
+
 *** 0.0.1
+
    - Initial commit
    - Added basic project scaffold
 
-
 ** References
 
-  -
+  - [[https://dthompson.us/projects/guile-sdl2.html][guile-sdl2]]
