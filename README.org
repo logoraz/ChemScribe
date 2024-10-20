@@ -1,0 +1,41 @@
+#+title: ChemScribe (الكتبة)
+#+author: Erik P Almaraz (logoraz)
+
+/A Highly Extensible Chemical Formula Builder and Molecular Editor with Regulatory
+Intelligence written in Guile./
+
+This project is still in the ideation stage - I'm still in the process of determining the
+inner workings, let alone the UI system to implement it with. I would like to leverage
+Hoot as a point to create a web application. That said, I am still learning Guile and
+figured this would be a great way to dive in!
+
+* Goals
+
+  My first goal is to develop a simple database (integrated with JSON) that can store/access
+  molecular, raw material, formula, and regulatory data types. Second is to develop the
+  formula builder and Molecular editor. Thirdly is to integrate reulatory intelligence via
+  access to public databases.
+
+** Install
+
+  Installing ChemScribe using Guix...
+
+
+** Run/Load System
+
+  Loading program using Guix...
+
+** Guile
+
+  Modules built that can potentially become apart of Guile...
+
+** Change Log
+
+*** 0.0.1
+   - Initial commit
+   - Added basic project scaffold
+
+
+** References
+
+  -
