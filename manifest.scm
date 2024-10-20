@@ -29,6 +29,7 @@
 (packages->manifest
  (list guile-next
        guile-hoot
+       guile-websocket
        guile-sdl2
        sdl2
        sdl2-image
